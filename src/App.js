@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {useState} from 'react';
+import NavBar from './Components/NavBar';
 
 function App() {
 
-  const [count, setCount] = useState(0)
-  let mensajito = 'Te pasaste!'
+ 
   
   return ( 
     
-    < div className = "App" >
-
-    <h1 > {count < 10 ? count : mensajito} </h1>
-
-
-    <button onClick = {() => setCount(count + 1)} > + </button> 
+    <div className = "App">
+     
+      <NavBar />
+    
     </div>
-  );
+
+    );
   }
 
 
